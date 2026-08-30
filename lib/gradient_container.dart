@@ -5,7 +5,7 @@ const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
-  const GradientContainer.purple()
+  const GradientContainer.purple({super.key})
     : color1 = const Color.fromARGB(255, 246, 154, 126),
       color2 = const Color.fromARGB(255, 243, 199, 103);
   final Color color1;
@@ -20,7 +20,7 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: Center(child: Image.asset('assets/images/a1.png')),
+      child: Center(child: Image.asset('assets/images/a1.png', width: 200)),
     );
   }
 }
